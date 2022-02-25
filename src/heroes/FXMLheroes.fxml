@@ -1,14 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heroes.FXMLheroesController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
-</AnchorPane>
+<ScrollPane fx:id="ScrollPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heroes.FXMLheroesController">
+  <content>
+    <AnchorPane fx:id="AnchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="690.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="Label1" layoutX="238.0" layoutY="14.0" text="INFORMACION HEROES" textFill="#da0b0b">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="FLASH" contentDisplay="GRAPHIC_ONLY" layoutX="141.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/FLASH.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="PUNISHER" contentDisplay="GRAPHIC_ONLY" layoutX="141.0" layoutY="237.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/PUNISHER.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="NOVA" contentDisplay="GRAPHIC_ONLY" layoutX="537.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/NOVA.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="SONSPONT" contentDisplay="GRAPHIC_ONLY" layoutX="404.0" layoutY="247.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/SUNSPOT.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="SHAZAM" contentDisplay="GRAPHIC_ONLY" layoutX="277.0" layoutY="237.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/SHAZAM.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="NIGHTCORE" contentDisplay="GRAPHIC_ONLY" layoutX="405.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/NIGHTCORE.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="MAGIK" contentDisplay="GRAPHIC_ONLY" layoutX="273.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/MAGIK.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="DOMINO" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/DOMINO.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="WONDERWOMAN" contentDisplay="GRAPHIC_ONLY" layoutX="540.0" layoutY="237.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/WonderWoman.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="AQUAMAN" contentDisplay="GRAPHIC_ONLY" layoutX="17.0" layoutY="237.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/AQUAMAN.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <Label fx:id="Label2" layoutX="290.0" layoutY="463.0" text="BUSQUEDA" textFill="#0d4ed9">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Pane fx:id="paneView" layoutX="242.0" layoutY="571.0" prefHeight="200.0" prefWidth="200.0" />
+            <ImageView fitHeight="98.0" fitWidth="216.0" layoutX="62.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/images.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="460.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/Marvel-Studios-Logo.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="Txtbusqueda" layoutX="271.0" layoutY="506.0" onAction="#displayImage" promptText="      Ingresar Nombre" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
