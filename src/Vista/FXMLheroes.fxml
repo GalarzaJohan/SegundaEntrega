@@ -4,6 +4,9 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,19 +14,31 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane fx:id="ScrollPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heroes.FXMLheroesController">
+<ScrollPane fx:id="ScrollPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLheroesController">
   <content>
-    <AnchorPane fx:id="AnchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="690.0" style="-fx-background-color: #000000;">
+    <AnchorPane fx:id="AnchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="1089.0" prefWidth="747.0" style="-fx-background-color: #000000;">
          <children>
             <Label fx:id="Label1" layoutX="238.0" layoutY="14.0" text="INFORMACION HEROES" textFill="#da0b0b">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
             </Label>
+            <TableView fx:id="tlbHeroes" layoutX="49.0" layoutY="799.0" prefHeight="277.0" prefWidth="590.0">
+         <columns>
+            <TableColumn fx:id="colCodigo" prefWidth="51.19998246431351" text="Codigo" />
+            <TableColumn fx:id="colNombres" prefWidth="68.79998779296875" text="Nombres" />
+            <TableColumn fx:id="colDescripcion" prefWidth="68.0" text="Descripcion" />
+            
+         </columns>
+      </TableView>
             <MenuButton fx:id="FLASH" contentDisplay="GRAPHIC_ONLY" layoutX="141.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: negro;" text="MenuButton">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" text="FLASH" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem mnemonicParsing="false" text="BARRY ALLEN" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="APARICION COMIC 1900" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
               </items>
                <graphic>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -156,7 +171,7 @@
                </font>
             </Label>
             <Pane fx:id="paneView" layoutX="242.0" layoutY="571.0" prefHeight="200.0" prefWidth="200.0" />
-            <ImageView fitHeight="98.0" fitWidth="216.0" layoutX="62.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="98.0" fitWidth="216.0" layoutX="49.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/images.jpg" />
                </image>
